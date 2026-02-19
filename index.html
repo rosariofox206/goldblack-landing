@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GOLD&BLACK • Premios</title>
+  <meta name="description" content="Premios reales • Pedí tu link por WhatsApp" />
+  <style>
+    :root{
+      --bg:#050506; --card:#0b0b10; --gold:#d7b34a; --gold2:#ffdf7a;
+      --line:rgba(255,255,255,.10); --muted:rgba(255,255,255,.78);
+      --shadow:0 18px 60px rgba(0,0,0,.55);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background: radial-gradient(1200px 500px at 50% -50px, rgba(215,179,74,.20), transparent 65%),
+                  radial-gradient(900px 450px at 20% 10%, rgba(255,223,122,.10), transparent 55%),
+                  var(--bg);
+      color:#fff;
+    }
+    .wrap{max-width:980px;margin:0 auto;padding:22px 14px 90px}
+    .hero{
+      margin-top:10px;border:1px solid rgba(215,179,74,.20);border-radius:22px;
+      background: linear-gradient(180deg, rgba(255,255,255,.04), transparent 35%),
+                  radial-gradient(900px 420px at 50% 0%, rgba(215,179,74,.12), transparent 70%),
+                  var(--card);
+      box-shadow:var(--shadow);overflow:hidden;position:relative;
+    }
+    .hero:before{
+      content:"";position:absolute;inset:-2px;
+      background:linear-gradient(120deg, transparent, rgba(215,179,74,.25), transparent);
+      filter:blur(18px);opacity:.55;pointer-events:none;
+    }
+    .inner{position:relative;padding:26px 18px}
+    .badge{
+      display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;
+      border:1px solid rgba(215,179,74,.28);background:rgba(215,179,74,.10);
+      color:var(--gold2);font-weight:800;font-size:13px;
+    }
+    h1{margin:12px 0 6px;font-size:30px;line-height:1.1}
+    p{margin:0 0 16px;color:var(--muted)}
+    .ctaRow{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:14px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      background:#25D366;color:#0a1b10;text-decoration:none;
+      padding:14px 16px;border-radius:16px;font-weight:900;
+      box-shadow:0 14px 35px rgba(37,211,102,.25);
+      min-width:220px;
+    }
+    .btn:hover{filter:brightness(1.05)}
+    .hint{font-size:12px;opacity:.75}
+    .divider{height:1px;background:var(--line);margin:18px 0 16px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    @media(min-width:720px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .card{
+      border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.10);
+      background:#09090d;transition:transform .15s ease,filter .15s ease;
+    }
+    .card:hover{transform:translateY(-2px);filter:brightness(1.03)}
+    .card img{width:100%;display:block;object-fit:cover;aspect-ratio:9/16}
+    .footer{margin-top:14px;font-size:12px;opacity:.55}
+    .fixed{
+      position:fixed;left:0;right:0;bottom:0;padding:12px 14px;
+      background:linear-gradient(180deg, transparent, rgba(5,5,6,.88) 35%, rgba(5,5,6,.98));
+      backdrop-filter:blur(10px);
+    }
+    .fixed .btn{width:100%}
+    .container{max-width:980px;margin:0 auto}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="inner">
+        <div class="badge">💎 Premios reales</div>
+        <h1>GOLD&BLACK</h1>
+        <p>Pedí tu link por WhatsApp y arrancá.</p>
+
+        <div class="ctaRow">
+          <a class="btn" href="https://wa.me/5492236705882?text=Hola%20quiero%20registrarme" target="_blank" rel="noopener">
+            WhatsApp • Registrarme
+          </a>
+          <div class="hint">📌 Tocá el botón y te respondemos al toque.</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="grid">
+          <div class="card"><img src="premios/1.jpg" alt="Premio 1"></div>
+          <div class="card"><img src="premios/2.jpg" alt="Premio 2"></div>
+          <div class="card"><img src="premios/3.jpg" alt="Premio 3"></div>
+          <div class="card"><img src="premios/4.jpg" alt="Premio 4"></div>
+          <div class="card"><img src="premios/5.jpg" alt="Premio 5"></div>
+          <div class="card"><img src="premios/6.jpg" alt="Premio 6"></div>
+        </div>
+
+        <div class="footer">© GOLD&BLACK</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fixed">
+    <div class="container">
+      <a class="btn" href="https://wa.me/5492236705882?text=Hola%20quiero%20registrarme" target="_blank" rel="noopener">
+        WhatsApp • Registrarme
+      </a>
+    </div>
+  </div>
+</body>
+</html>
